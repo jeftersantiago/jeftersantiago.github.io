@@ -1,5 +1,6 @@
 <!-- icon -->
 <link rel="icon" type="imagem/png" href="/assets/pic.jpg" />
+
 <h4 align="left"> Find me on </h4>
 <p align="left">
  <a href="https://twitter.com/jefter66" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/3d/Twitter_logo_2012.svg/1200px-Twitter_logo_2012.svg.png" alt="twitter"   height="35px" align="center" /></a>
@@ -44,5 +45,4 @@
  </p>
 
 ## Very important stuff
-I use Linux and Emacs, in fact, i use them almost exclusively. You can
-find my dotfiles with my configs for Emacs [here](https://github.com/jefter66/dotfiles.git).
+Find my dotfiles with my configs for Emacs [here](https://github.com/jefter66/dotfiles.git).
