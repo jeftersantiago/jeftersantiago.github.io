@@ -11,6 +11,15 @@
  <a href="https://www.youtube.com/channel/UCIxDbTCRe6DlX3rsJhMgdAA" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/YouTube_social_white_squircle.svg/512px-YouTube_social_white_squircle.svg.png" alt="twitter"   height="35px" align="center" /></a>
 </p>
 
+# Português🇧🇷
+
+# English 🇬🇧
+
+## About me
+## Education
+## Projects (?)
+
+
 <!--
  [![Spotify](https://github-spotify.d10g3n3s.vercel.app/api/spotify)](https://open.spotify.com/user/31hzlmg32d7nvm2p56lkzt3qu2oe?si=Ee39x1T9ReOFaXsSHimUOQ)
 -->
@@ -34,20 +43,6 @@
     <a href="https://github.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="github" width="40" height="40"/> </a>
  </p>
 
-# Português🇧🇷
-
-# English 🇬🇧
-
-## About me
-## Education
-## Projects (?)
-
-
-# Hi there!
-I'm interested in physics, algorithms and humor.
-
 ## Very important stuff
 I use Linux and Emacs, in fact, i use them almost exclusively. You can
 find my dotfiles with my configs for Emacs [here](https://github.com/jefter66/dotfiles.git).
-
-
