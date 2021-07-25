@@ -12,11 +12,11 @@
  <a href="https://www.youtube.com/channel/UCIxDbTCRe6DlX3rsJhMgdAA" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/YouTube_social_white_squircle.svg/512px-YouTube_social_white_squircle.svg.png" alt="twitter"   height="35px" align="center" /></a>
 </p>
 
-
+<!--
 # Português🇧🇷
 
 # English 🇬🇧
-
+-->
 <!-- ## About me
 ## Education
 ## Projects (?)
@@ -25,6 +25,7 @@
 <!--
  [![Spotify](https://github-spotify.d10g3n3s.vercel.app/api/spotify)](https://open.spotify.com/user/31hzlmg32d7nvm2p56lkzt3qu2oe?si=Ee39x1T9ReOFaXsSHimUOQ)
 -->
+<!--
 <p align="left">
 <h4 align="left">Languages</h4>
    <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a>
@@ -44,6 +45,7 @@
     <a href="https://git-scm.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="40" height="40"/> </a>
     <a href="https://github.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="github" width="40" height="40"/> </a>
  </p>
+-->
 
 ## Very important stuff
 Find my dotfiles with my configs for Emacs [here](https://github.com/jefter66/dotfiles.git).
