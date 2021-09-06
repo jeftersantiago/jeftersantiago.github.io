@@ -16,7 +16,7 @@
 -->
  </p>
 
- <h4 align="left">Tools</h2>
+ <h4 align="left">Tools</h4>
  <p align="left">
    <a href="https://www.gnu.org/software/emacs/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/1024px-EmacsIcon.svg.png"                                 alt="emacs"     width="40" height="40"/> </a>
    <a href="https://orgmode.org/"                target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Org-mode-unicorn.svg/707px-Org-mode-unicorn.svg.png"                    alt="orgmode"   width="40" height="40"/> </a>
