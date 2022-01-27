@@ -19,8 +19,12 @@
 
 (setq org-html-validation-link nil
       org-html-head-include-scripts nil       ;; scripts
+      org-export-babel-evaluate nil
       org-html-head-include-default-style nil ;; styles
       org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />")
+
+
+
 
 
 (setq org-publish-project-alist
@@ -35,7 +39,15 @@
              :with-toc nil
              :section-numbers nil
              :time-stamp-file nil
-             )))
+             )
+       (list "images"
+             :base-directory "./images/"
+             :recursive t
+             :base-extension "jpg\\|gif\\|png"
+             :publishing-directory "./images/"
+             :publishing-function 'org-publish-attachment
+             )
+       ))
 
 (org-publish-all t)
 (message "Build complete")

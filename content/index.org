@@ -24,7 +24,7 @@
 
 ** The code
    #+name: simple_pendulum
-   #+begin_src fortran :noeval
+   #+begin_src fortran  
      implicit none
      integer, parameter :: n = 500
      real, parameter :: g = 9.81
@@ -57,7 +57,7 @@
   code) it generates an image saved in the same folder as the =.org= file is
   located and added to te =.org= file.
 
-  #+begin_src gnuplot
+  #+begin_src gnuplot :var data=simple_pendulum :file ../images/output.png :exports results 
     set xrange[*:*] noreverse writeback
     set yrange[*:*] noreverse writeback
 
@@ -71,25 +71,8 @@
     plot data using 1:2 with line ls 1
   #+end_src
 
-  #+begin_src gnuplot :var data=simple_pendulum :file output.png :exports results
-    set xrange[*:*] noreverse writeback
-    set yrange[*:*] noreverse writeback
-
-    set grid
-    set style line 1 lt 1 lc "black" lw 2
-    set key right top
-
-    set xlabel "Time"
-    set ylabel "Angle"
-
-    plot data using 1:2 with line ls 1
-  #+end_src
-
- 
-  #+RESULTS:
   #+caption: Simple pendulum simulation.
-  [[file:../resources/output.png]]
-
+  [[https://raw.githubusercontent.com/jeftersantiago/comp_phys/master/output.png]]
 
 
    
