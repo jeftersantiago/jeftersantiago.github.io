@@ -24,7 +24,7 @@
 
 ** The code
    #+name: simple_pendulum
-   #+begin_src fortran
+   #+begin_src fortran :noeval
      implicit none
      integer, parameter :: n = 500
      real, parameter :: g = 9.81
@@ -46,12 +46,12 @@
         print *, t(i) ,  theta(i)
      end do
    #+end_src
-
+   
    You can run this on =Emacs= by using the combining keys
    =C-c C-c= and it will generate the results has a table named
    =simple_pendulum= the table values can be plotted using you
    plotting software of preference.
-
+   
 ** Plotting
   By running the =Gnuplot= code (the same command used to run the =Fortran=
   code) it generates an image saved in the same folder as the =.org= file is
