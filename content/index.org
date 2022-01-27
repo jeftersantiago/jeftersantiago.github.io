@@ -1,0 +1,12 @@
+#+title: Jefter Santiago
+#+html: <img src="https://avatars.githubusercontent.com/u/39709641?v=4" width="300" height="300" align="right" >
+
+
+
+* Find me on  
+  - Email: [[mailto:jefterrsantiago@gmail.com][jefterrsantiago@gmail.com]]
+  - Twitter: [[https://twitter.com/jefter66][@jefter66]]
+  - Instagram: [[https://www.instagram.com/jeftersantiago/][jeftersantiago]]
+  - Telegram: [[https://t.me/jefter66][jefter66]]
+  - Github: [[https://github.com/jeftersantiago][jeftersantiago]]
+
