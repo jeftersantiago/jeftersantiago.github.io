@@ -8,37 +8,15 @@
 <title>Jefter Santiago</title>
 <meta name="generator" content="Org mode" />
 <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
 <h1 class="title">Jefter Santiago</h1>
 <img src="https://avatars.githubusercontent.com/u/39709641?v=4" width="300" height="300" align="right" >
 
-<div id="outline-container-org4cecfaf" class="outline-2">
-<h2 id="org4cecfaf">Find me on</h2>
-<div class="outline-text-2" id="text-org4cecfaf">
+<div id="outline-container-org3532696" class="outline-2">
+<h2 id="org3532696">Find me on</h2>
+<div class="outline-text-2" id="text-org3532696">
 <ul class="org-ul">
 <li>Email: <a href="mailto:jefterrsantiago@gmail.com">jefterrsantiago@gmail.com</a></li>
 <li>Twitter: <a href="https://twitter.com/jefter66">@jefter66</a></li>
@@ -46,99 +24,6 @@
 <li>Telegram: <a href="https://t.me/jefter66">jefter66</a></li>
 <li>Github: <a href="https://github.com/jeftersantiago">jeftersantiago</a></li>
 </ul>
-</div>
-</div>
-
-
-<div id="outline-container-orgf5c241d" class="outline-2">
-<h2 id="orgf5c241d">Literate programming using org-mode</h2>
-<div class="outline-text-2" id="text-orgf5c241d">
-</div>
-<div id="outline-container-org570193b" class="outline-3">
-<h3 id="org570193b">Introduction</h3>
-<div class="outline-text-3" id="text-org570193b">
-<p>
-This is a simulation of a simple pendulum system with the code in
-<code>Fortran</code> and ploting made using <code>Gnuplot</code>.
-</p>
-
-<p>
-The calculations for the angular velocity and angle variation are made
-using the following equations:
-\[ \omega_{i+1} = w_i - \frac{g}{l}\cdot  \theta _i \cdot  \Delta t  \quad \text{ and } \quad \theta _{i+1} = \theta _i + \omega_i \cdot  \Delta t \]
-We give an startup value for the angle \( \theta_0  \), the time \( t_0 = 0 \) and
-angular velocity \( \omega_0 = 0 \). I choose the variation \( dt  \) arbitrarily.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org39a7c63" class="outline-3">
-<h3 id="org39a7c63">The code</h3>
-<div class="outline-text-3" id="text-org39a7c63">
-<div class="org-src-container">
-<pre class="src src-fortran" id="orgdbfeb07"><span style="font-weight: bold; text-decoration: underline;">implicit none</span>
-<span style="font-weight: bold; text-decoration: underline;">integer</span>, <span style="font-weight: bold; text-decoration: underline;">parameter</span> :: n = 500
-<span style="font-weight: bold; text-decoration: underline;">real</span>, <span style="font-weight: bold; text-decoration: underline;">parameter</span> :: g = 9.81
-<span style="font-weight: bold; text-decoration: underline;">real</span>, <span style="font-weight: bold; text-decoration: underline;">parameter</span> :: l = 1.0
-<span style="font-weight: bold; text-decoration: underline;">real</span>, <span style="font-weight: bold; text-decoration: underline;">dimension</span>(<span style="font-weight: bold; font-style: italic;">n</span>) :: w, t
-<span style="font-weight: bold; text-decoration: underline;">real</span>, <span style="font-weight: bold; text-decoration: underline;">dimension</span>(<span style="font-weight: bold; font-style: italic;">n</span>) :: theta
-<span style="font-weight: bold; text-decoration: underline;">real</span>, <span style="font-weight: bold; text-decoration: underline;">parameter</span> :: dt = 0.02
-<span style="font-weight: bold; text-decoration: underline;">integer</span> :: i
-theta(1) = 0.02
-w(1) = 0
-t(1) = 0
-<span style="font-weight: bold; font-style: italic;">d</span><span style="font-weight: bold; font-style: italic;">o i = 1, n-1</span>
-   w(i+1) = w(i) - (g/l) * theta(i) * dt
-   theta(i+1) = theta(i) + w(i+1) * dt
-   t(i+1) = t(i) + dt
-<span style="font-weight: bold;">end</span> <span style="font-weight: bold;">do</span>  
-
-<span style="font-weight: bold; font-style: italic;">d</span><span style="font-weight: bold; font-style: italic;">o i = 1, n</span>
-   <span style="font-weight: bold;">print</span> *, t(i) ,  theta(i)
-<span style="font-weight: bold;">end</span> <span style="font-weight: bold;">do</span>
-</pre>
-</div>
-
-<p>
-You can run this on <code>Emacs</code> by using the combining keys
-<code>C-c C-c</code> and it will generate the results has a table named
-<code>simple_pendulum</code> the table values can be plotted using you
-plotting software of preference.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org6459c09" class="outline-3">
-<h3 id="org6459c09">Plotting</h3>
-<div class="outline-text-3" id="text-org6459c09">
-<p>
-By running the <code>Gnuplot</code> code (the same command used to run the <code>Fortran</code>
-code) it generates an image saved in the same folder as the <code>.org</code> file is
-located and added to te <code>.org</code> file.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-gnuplot">set xrange[*:*] noreverse writeback
-set yrange[*:*] noreverse writeback
-
-set grid
-set style line 1 lt 1 lc "black" lw 2
-set key right top
-
-set xlabel "Time"
-set ylabel "Angle"
-
-plot data using 1:2 with line ls 1
-</pre>
-</div>
-
-
-<div class="figure">
-<p><img src="https://raw.githubusercontent.com/jeftersantiago/comp_phys/master/output.png" alt="output.png" />
-</p>
-<p><span class="figure-number">Figure 1: </span>Simple pendulum simulation.</p>
-</div>
-</div>
 </div>
 </div>
 </div>
