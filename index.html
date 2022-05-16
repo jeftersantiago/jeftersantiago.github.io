@@ -8,22 +8,110 @@
 <title>Jefter Santiago</title>
 <meta name="generator" content="Org mode" />
 <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
 <h1 class="title">Jefter Santiago</h1>
 <img src="https://avatars.githubusercontent.com/u/39709641?v=4" width="300" height="300" align="right" >
 
-<div id="outline-container-orgc9d5558" class="outline-2">
-<h2 id="orgc9d5558">Find me on</h2>
-<div class="outline-text-2" id="text-orgc9d5558">
+<div id="outline-container-org5f8f389" class="outline-2">
+<h2 id="org5f8f389">Find me on</h2>
+<div class="outline-text-2" id="text-org5f8f389">
 <ul class="org-ul">
 <li>Email: <a href="mailto:jefterrsantiago@gmail.com">jefterrsantiago@gmail.com</a></li>
-<li>Twitter: <a href="https://twitter.com/jefter_santiago">@jefter_santiago</a></li>
+<li>Twitter: <a href="https://twitter.com/jeftermares">jeftermares</a></li>
 <li>Instagram: <a href="https://www.instagram.com/jeftersantiago/">jeftersantiago</a></li>
 <li>Telegram: <a href="https://t.me/jefter66">jefter66</a></li>
 <li>Github: <a href="https://github.com/jeftersantiago">jeftersantiago</a></li>
 </ul>
+</div>
+</div>
+<div id="outline-container-org3f5d955" class="outline-2">
+<h2 id="org3f5d955">Matriz mudança de base</h2>
+<div class="outline-text-2" id="text-org3f5d955">
+<p>
+Sejam \( E = \{ e_1, e_2, e_3 \} \) e \( F = \{ f_1, f_2, f_3 \} \) queremos escrever
+a matriz mudança de base de \( F  \mapsto E  \), para isso primeiro
+expressamos um vetor \( u \) na base \( F \). Então
+\[ (u)_F = \alpha f_1 + \beta f_2 + \gamma f_3 = (\alpha , \beta, \gamma )_F \]
+</p>
+
+<p>
+Agora escrevemos os vetores da base \( F \) como combinação linear
+dos dos vetores da base \( E \)
+</p>
+
+<p>
+\[ \begin{cases} f_1 = \alpha_{11} e_1 + \alpha_{21} e_2 + \alpha _{31} e_1 \\ 
+  f_1 = \alpha _{12} e_1 + \alpha _{22} e_2 + \alpha _{23} e_3 \\
+  f_3 = \alpha _{13} e_1 + \alpha _{23} e_2 + \alpha _{33} e_3
+  \end{cases}  \Rightarrow \begin{align} u = \alpha f_1 + \beta f_2 + \gamma f_3 = \alpha (a_{11} e_1 + a_{21} e_2 + a_{31} e_3) + \beta ( \cdots
+  ) + \gamma (\cdots) \\ u = (\alpha \cdot  a_{11} + \beta \cdot  a_{12} + \gamma \cdot  a_{13}) \cdot  e_1 + (\cdots) \cdot
+  e_2 + (\cdots) \cdot  e_3 \end{align}\]
+  \[ u = (\alpha \cdot  a_{11} + \cdots , \alpha \cdot  a_{12} + \cdots , \alpha \cdot  a_{13} + \cdots )_E \]
+  \[ (u)_E = \underbrace{\begin{pmatrix} a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} &
+  a_{33} \end{pmatrix}}_{\text{Matrix mudança de base: } M_{F}^{E}} \cdot
+  \underbrace{\begin{pmatrix} \alpha \\ \beta \\ \gamma \end{pmatrix}}_{\text{Coordenadas em F}} \]
+  \[ \boxed{(u)_E = M_{F}^{E} \cdot  (u)_F }\]
+</p>
+</div>
+
+
+<div id="outline-container-org206d677" class="outline-3">
+<h3 id="org206d677">Exemplo</h3>
+<div class="outline-text-3" id="text-org206d677">
+<p>
+\[ E = (e_1, e_2, e_3), F = (f_1, f_2, f_3) \]
+\( f_1 = -e_1, f_2 = e_1 + e_2, f_3 = e_1 - e_3 \) 
+Calcular \( u = (5,2,-1)_F \) na base E.
+</p>
+
+<p>
+\[ \begin{cases}
+ f_1 = -1 e_1 + 0 e_2 + 0 e_3 \\
+ f_2 = 1 e_1 + 1 e_2 + 0 e_3 \\
+ f_3 = 1 e_1 + 0 e_2 - 1 e_3
+\end{cases} \Rightarrow M_{F}^{E} = \begin{pmatrix}
+-1 & 0 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & -1
+\end{pmatrix}\]
+</p>
+
+<p>
+\[ (u)_E = M_{F}^{E} \cdot  (u)_F = \begin{pmatrix}
+-1 & 0 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & -1
+\end{pmatrix} \cdot  \begin{pmatrix}
+5 & 2 & -1
+\end{pmatrix} \]
+</p>
+
+<p>
+\[ (u)_E = \begin{pmatrix}
+-4 \\ 2 \\ 1
+\end{pmatrix} \]
+</p>
+</div>
 </div>
 </div>
 </div>
